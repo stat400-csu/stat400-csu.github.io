@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/homework/readme/</loc>
+    <loc>/homeworks/readme/</loc>
     <priority>0</priority>
   </url>
   
@@ -34,7 +34,7 @@
   </url>
   
   <url>
-    <loc>/homework/</loc>
+    <loc>/homeworks/</loc>
     <priority>0</priority>
   </url>
   
