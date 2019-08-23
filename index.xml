@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on STAT400: Statistical Computing</title>
-    <link>website-source/</link>
+    <link>/</link>
     <description>Recent content in Home on STAT400: Statistical Computing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="website-source/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Calendar</title>
-      <link>website-source/calendar/</link>
+      <link>/calendar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>website-source/calendar/</guid>
+      <guid>/calendar/</guid>
       <description>    Date  Week  Topic  Content      2019-08-27  1  Introduction + R     2019-08-29  1  ggplot2     2019-09-03  2  tidyverse     2019-09-05  2  Rmarkdown     2019-09-10  3  Probability for Stat Computing     2019-09-12  3  Probability for Stat Computing     2019-09-17  4  Simulation     2019-09-19  4  Simulation     2019-09-24  5  Simulation     2019-09-26  5  Math Stat for Computing     2019-10-01  6  Monte Carlo Integration     2019-10-03  6  Monte Carlo Integration     2019-10-08  7  Monte Carlo Integration     2019-10-10  7  Monte Carlo Integration     2019-10-15  8  Monte Carlo Integration     2019-10-17  8  Monte Carlo Integration     2019-10-22  9  Review     2019-10-24  9  Midterm     2019-10-29  10  Monte Carlo Methods for Inference     2019-10-31  10  Monte Carlo Methods for Inference     2019-11-05  11  Monte Carlo Methods for Inference     2019-11-07  11  Monte Carlo Methods for Inference     2019-11-12  12  Bootstrapping     2019-11-14  12  Bootstrapping     2019-11-19  13  Bootstrapping     2019-11-21  13  Bootstrapping     2019-11-26  14  Thanksgiving Break     2019-11-28  14  Thanksgiving Break     2019-12-03  15  Permutation Tests     2019-12-05  15  Permutation Tests     2019-12-10  16  Project Presentations     2019-12-12  16  Project Presentations      </description>
     </item>
     
     <item>
       <title>Homework</title>
-      <link>website-source/homework/</link>
+      <link>/homework/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>website-source/homework/</guid>
+      <guid>/homework/</guid>
       <description>  All homework assignments are due at the beginning of lecture on the date listed in the table below.
   Homework  Due  Assignment      1  2019-09-05     2  2019-09-12     3  2019-09-19     4  2019-09-26     5  2019-10-03     6  2019-10-10     7  2019-10-17     8  2019-10-24     9  2019-11-07     10  2019-11-14     11  2019-11-21     12  2019-12-05      </description>
     </item>
     
     <item>
       <title>Syllabus</title>
-      <link>website-source/syllabus/</link>
+      <link>/syllabus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>website-source/syllabus/</guid>
+      <guid>/syllabus/</guid>
       <description>Course Objectives Computationally intensive statistical methods are a key component to modern data analysis methods. After completing this course, a successful student will be able to use statistical software to implement both traditional and state-of-the-art methods in computational statistics as well as recognize situations where these methods are required.
  Prerequisites CS160 or CS163 or CS164 or (MATH151 and MATH153)
 STAT 420 or concurrent enrollment.
