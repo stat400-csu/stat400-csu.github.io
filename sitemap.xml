@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>website-source/calendar/</loc>
+  </url>
+  
+  <url>
+    <loc>website-source/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>website-source/</loc>
+  </url>
+  
+  <url>
+    <loc>website-source/homework/</loc>
+  </url>
+  
+  <url>
+    <loc>website-source/syllabus/</loc>
+  </url>
+  
+  <url>
+    <loc>website-source/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
