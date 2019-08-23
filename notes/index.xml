@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notes on STAT400: Statistical Computing</title>
+    <link>/notes/</link>
+    <description>Recent content in Notes on STAT400: Statistical Computing</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/notes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>/notes/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/notes/readme/</guid>
+      <description>notes Class notes for STAT400@CSU</description>
+    </item>
+    
+    <item>
+      <title>Chapter 0: Some Useful Tools</title>
+      <link>/notes/0_tools/0_tools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/notes/0_tools/0_tools/</guid>
+      <description>We will start the class with some tools that will be useful for success in this class. Going forward, we will use these tools for any computing and data analysis tasks.
+
+Adapted from R for Data Science, Wickham &amp;amp; Grolemund (2017)
+ 
+In STAT400, we will cover each part of the data analysis pipeline using
+    R R (https://www.r-project.org) is a free, open source software environment for statistical computing and graphics that is available for every major platform.</description>
+    </item>
+    
+    <item>
+      <title>STAT400: Statistical Computing</title>
+      <link>/notes/00_syllabus/syllabus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/notes/00_syllabus/syllabus/</guid>
+      <description>Dr. Andee Kaplan
+208 Statistics Building
+Office Hours: TR 11:00am - 12:00pm in Statistics 208 Lectures: TR 9:30am - 10:45am in Military Sciences 115
+andee.kaplan@colostate.edu
+Course Objectives Computationally intensive statistical methods are a key component to modern data analysis methods. After completing this course, a successful student will be able to use statistical software to implement both traditional and state-of-the-art methods in computational statistics as well as recognize situations where these methods are required.</description>
+    </item>
+    
+  </channel>
+</rss>
