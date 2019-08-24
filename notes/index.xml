@@ -20,7 +20,7 @@
     </item>
     
     <item>
-      <title>Chapter 0: Some Useful Tools</title>
+      <title>Chapter 0: Some Useful Computing Tools</title>
       <link>/notes/0_tools/0_tools/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -30,7 +30,9 @@
 Adapted from R for Data Science, Wickham &amp;amp; Grolemund (2017)
  
 In STAT400, we will cover each part of the data analysis pipeline using
-    R R (https://www.r-project.org) is a free, open source software environment for statistical computing and graphics that is available for every major platform.</description>
+Tools like R and RStudio
+ Packages in R
+ Computational ideas in Statistics (implemented in R)</description>
     </item>
     
     <item>

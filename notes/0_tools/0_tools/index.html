@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Chapter 0: Some Useful Tools | STAT400: Statistical Computing</title>
+    <title>Chapter 0: Some Useful Computing Tools | STAT400: Statistical Computing</title>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/fonts.css" />
     
@@ -13,7 +13,7 @@
     <nav>
     <ul class="menu">
       
-      <li><a href="/./">Home</a></li>
+      <li><a href="/">Home</a></li>
       
       <li><a href="/syllabus/">Syllabus</a></li>
       
@@ -26,7 +26,7 @@
     </nav>
 
 <div class="article-meta">
-<h1><span class="title">Chapter 0: Some Useful Tools</span></h1>
+<h1><span class="title">Chapter 0: Some Useful Computing Tools</span></h1>
 
 
 </div>
@@ -48,9 +48,9 @@
 <br /></p>
 <p>In STAT400, we will cover each part of the data analysis pipeline using</p>
 <ol style="list-style-type: decimal">
-<li><!--Tools like `R` and RStudio--></li>
-<li><!--Packages in `R`--></li>
-<li><!--Computational ideas in Statistics (implemented in `R`)--></li>
+<li><p>Tools like <code>R</code> and RStudio</p></li>
+<li><p>Packages in <code>R</code></p></li>
+<li><p>Computational ideas in Statistics (implemented in <code>R</code>)</p></li>
 </ol>
 <div id="r" class="section level1">
 <h1><code>R</code></h1>
@@ -398,9 +398,128 @@ df</code></pre>
 </div>
 <div id="basic-programming" class="section level2">
 <h2>Basic Programming</h2>
+<p>We will cover three basic programming ideas: functions, conditionals, and loops.</p>
+<div id="functions" class="section level3">
+<h3>Functions</h3>
+<p>We have used many functions that are already built into <code>R</code> already. For example – <code>exp()</code>, <code>log()</code>, <code>sin()</code>, <code>rep()</code>, <code>seq()</code>, <code>head()</code>, <code>tail()</code>, etc.</p>
+<p>But what if we want to use a function that doesn’t exist?</p>
+<p><strong>We can write it!</strong></p>
+<p>Idea: We want to avoid repetitive coding because errors will creep in.
+Solution: Extract common core of the code, wrap it in a function, and make it reusable.</p>
+<p>The basic structure for writing a function is as follows:</p>
+<ul>
+<li>Name</li>
+<li>Input arguments (including names and default values)</li>
+<li>Body (code)</li>
+<li>Output values</li>
+</ul>
+<pre class="r"><code># we store a function in a named value
+# function is itself a function to create functions!
+# we specify the inputs that we can use inside the function
+# we can specify default values, but it is not necessary
+name &lt;- function(input = FALSE) {
+  # body code goes here
+  
+  # return output vaues
+  return(input)
+}</code></pre>
+<p>Here is a more realistic first example:</p>
+<pre class="r"><code>my_mean &lt;- function(x) {
+  sum(x)/length(x)
+}</code></pre>
+<p>Let’s test it out.</p>
+<pre class="r"><code>my_mean(1:15)</code></pre>
+<pre><code>## [1] 8</code></pre>
+<pre class="r"><code>my_mean(c(1:15, NA))</code></pre>
+<pre><code>## [1] NA</code></pre>
+<p>Some advice for function writing:</p>
+<ol style="list-style-type: decimal">
+<li>Start simple, then extend.</li>
+<li>Test out each step of the way.</li>
+<li>Don’t try too much at once.</li>
+</ol>
+</div>
+<div id="conditionals" class="section level3">
+<h3>Conditionals</h3>
+<p>Conditionals are functions that control the flow of analysis. Conditionals determine if a specified condition is met (or not), then direct subsequent analysis or action depending on whether the condition is met (or not).</p>
+<pre class="r"><code>if(condition) {
+  # Some code that runs if condition is TRUE
+} else {
+  # Some code that runs if condition is TRUE
+}</code></pre>
+<ul>
+<li><code>condition</code> is a length one logical value, i.e. either <code>TRUE</code> or <code>FALSE</code></li>
+<li>We can use <code>&amp;</code> and <code>|</code> to combine several conditions</li>
+<li><code>!</code> negates condition</li>
+</ul>
+<p>For example, if we wanted to do something with <code>na.rm</code> from our function,</p>
+<pre class="r"><code>if(na.rm) x &lt;- na.omit(x) # na.omit is a function that removes NA values</code></pre>
+<p>might be a good option.</p>
+</div>
+<div id="loops" class="section level3">
+<h3>Loops</h3>
+<p>Loops (and their cousins the <code>apply()</code> function) are useful when we want to repeat the same block of code many times. Reducing the amount of typing we do can be nice, and if we have a lot of code that is essentially the same we can take advantage of looping. <code>R</code> offers several loops: for, while, repeat.</p>
+<p>For loops will run through a specified index and perform a set of code for each value of the indexing variable.</p>
+<pre class="r"><code>for(i in index values) {
+  # block of code
+  # can print values also
+  # code in here will most likely depend on i
+}</code></pre>
+<pre class="r"><code>for(i in 1:3) {
+  print(i)
+}</code></pre>
+<pre><code>## [1] 1
+## [1] 2
+## [1] 3</code></pre>
+<pre class="r"><code>for(species in unique(iris$Species)) {
+  subset_iris &lt;- iris[iris$Species == species,]
+  avg &lt;- mean(subset_iris$Sepal.Length)
+  print(paste(species, avg))
+}</code></pre>
+<pre><code>## [1] &quot;setosa 5.006&quot;
+## [1] &quot;versicolor 5.936&quot;
+## [1] &quot;virginica 6.588&quot;</code></pre>
+<p>While loops will run until a specified condition is no longer true.</p>
+<pre class="r"><code>condition &lt;- TRUE
+while(condition) {
+  # do stuff
+  # don&#39;t forget to eventually set the condition to false
+  # in the toy example below I check if the current seconds is divisible by 5
+  time &lt;- Sys.time()
+  if(as.numeric(format(time, format = &quot;%S&quot;)) %% 5 == 0) condition &lt;- FALSE
+}
+print(time)</code></pre>
+<pre><code>## [1] &quot;2019-08-24 09:32:05 MDT&quot;</code></pre>
+<pre class="r"><code># we can also use while loops to iterate
+i &lt;- 1
+while (i &lt;= 5) {
+    print(i)
+    i &lt;- i + 1
+}</code></pre>
+<pre><code>## [1] 1
+## [1] 2
+## [1] 3
+## [1] 4
+## [1] 5</code></pre>
+<p><span class="pagebreak"></span></p>
+<p><span class="yourturn"><strong>Your Turn</strong></span></p>
+<ol style="list-style-type: decimal">
+<li><p>Alter your <code>my_mean()</code> function to take a second argument (<code>na.rm</code>) with default value <code>FALSE</code> that removes <code>NA</code> values if <code>TRUE</code>.</p></li>
+<li><p>Add checks to your function to make sure the input data is either numeric or logical. If it is logical convert it to numeric.</p></li>
+<li><p>The diamonds data set is included in the <code>ggplot2</code> package (not by default in <code>R</code>). It can be read into your environment with the following function.</p>
+<pre class="r"><code>data(&quot;diamonds&quot;, package = &quot;ggplot2&quot;)</code></pre>
+<p>Loop over the columns of the diamonds data set and apply your mean function to all of the numeric columns (Hint: look at the <code>class()</code> function).</p></li>
+</ol>
+<p><span class="pagebreak"></span></p>
+</div>
 </div>
 <div id="packages" class="section level2">
 <h2>Packages</h2>
+<p>Commonly used <code>R</code> functions are installed with base <code>R</code>.</p>
+<p><code>R</code> packages containing more specialized <code>R</code> functions can be installed freely from CRAN servers using function <code>install.packages()</code>.</p>
+<p>After packages are installed, their functions can be loaded into the current <code>R</code> session using the function <code>library()</code>.</p>
+<p>Packages are contrbuted by <code>R</code> users just like you!</p>
+<p>We will use some great packages in this class. Feel free to venture out and find your favorites (google R package + what you’re trying to do to find more packages).</p>
 </div>
 <div id="additional-resources" class="section level2">
 <h2>Additional resources</h2>
