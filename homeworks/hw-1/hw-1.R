@@ -1,0 +1,14 @@
+## STAT400 @ CSU
+## Homework 1
+## Due date: Sept. 5 by 4pm
+## Your name here
+
+## load the data
+library(ggplot2)
+
+## take a look
+head(diamonds)
+
+#################################
+## Continue your analysis here ##
+#################################
