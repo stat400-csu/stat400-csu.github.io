@@ -10,3 +10,6 @@
 [submodule "hw-4"]
 	path = hw-4
 	url = https://github.com/stat400-csu/hw-4.git
+[submodule "hw-5"]
+	path = hw-5
+	url = https://github.com/stat400-csu/hw-5.git
