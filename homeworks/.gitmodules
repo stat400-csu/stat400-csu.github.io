@@ -13,3 +13,6 @@
 [submodule "hw-5"]
 	path = hw-5
 	url = https://github.com/stat400-csu/hw-5.git
+[submodule "hw-6"]
+	path = hw-6
+	url = https://github.com/stat400-csu/hw-6.git
