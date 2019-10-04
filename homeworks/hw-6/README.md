@@ -23,3 +23,5 @@ Be sure to `set.seed(400)` at the beginning of your homework.
     b. Compare your estimates with the output from the `R` function `pnorm()` for $x = 0.5, 1, 2, 3$. Summarise your findings comparing the performance of the methods.
     c. For each method, compute an estimate of the variance of your Monte Carlo estimate of $\Phi(2)$. Summarise your findings.
     d. For each method, compute a $95\%$ confidence interval for $\Phi(2)$. Summarise your findings. Which CI is narrower and why does that matter?
+    
+Turn in in a pdf of your homework to canvas. Your .Rmd file on rstudio.cloud will also be used in grading, so be sure they are identical and reproducible.

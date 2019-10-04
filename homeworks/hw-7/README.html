@@ -365,29 +365,29 @@ summary {
 </div>
 
 
-<div id="hw-6" class="section level1">
-<h1>hw-6</h1>
-<p>Homework 6 in STAT400: Computational Statistics @ CSU</p>
+<div id="hw-7" class="section level1">
+<h1>hw-7</h1>
+<p>Homework 7 in STAT400: Computational Statistics @ CSU</p>
 <div id="assignment" class="section level2">
 <h2>Assignment</h2>
 <p>Be sure to <code>set.seed(400)</code> at the beginning of your homework.</p>
 <ol style="list-style-type: decimal">
-<li><p>Continue Problem 2 from Homework 4 and Problem 2 from Homework 5 (the Rayleigh distribution). Goal: you will use the code that you created last week for Problem 2. to learn more about evaluating estimators. Here we are going to evaluate the median of the Rayleigh distribution.</p>
-<ol style="list-style-type: lower-alpha">
-<li>Generate <span class="math inline">\(n = 3\)</span> samples from a Rayleigh(1) distribution and estimate the median of the sample. Now repeat this process to generate <span class="math inline">\(m=100\)</span> estimated medians.</li>
-<li>Repeat part a but using <span class="math inline">\(n=100\)</span> samples from a Raleigh distribution.</li>
-<li>Repeat parts a and b but using <span class="math inline">\(m=1000\)</span>.</li>
-<li>Let <span class="math inline">\(\hat{\theta}_i\)</span> denote the estimated median from the <span class="math inline">\(i\)</span>th sample. Estimate <span class="math inline">\(E[\hat{\theta}]\)</span>, <span class="math inline">\(se(\hat{\theta})\)</span>, and <span class="math inline">\(bias(\hat{\theta})\)</span> for parts a-c. Compare your estimates from parts a-c.</li>
-</ol></li>
-<li><p>Generate a random sample of size <span class="math inline">\(1000\)</span> from a normal location mixture. The components of the mixture have <span class="math inline">\(N(0, 1)\)</span> and <span class="math inline">\(N(3, 1)\)</span> distributions with mixing probabilities <span class="math inline">\(p_1\)</span> and <span class="math inline">\(p_2 = 1 - p_1\)</span>. Graph the histogram of the sample with density superimposed for <span class="math inline">\(p_1 = 0.1, \dots, 0.9\)</span> and observe whether the mixture appears to be bimodal. Make a conjecture about the values of <span class="math inline">\(p_1\)</span> that produce bimodal mixtures.</p></li>
-<li><p>Develop two Monte Carlo integration approaches to estimate <span class="math inline">\(\int\limits_0^5 x^2 \exp(-x) dx\)</span>. (You must use different distributions in the two approaches). Check your answer using the <code>integrate()</code> function.</p></li>
-<li><p>Estimating the cdf of a normal distribution. Use <span class="math inline">\(m = 1000\)</span>.</p>
-<ol style="list-style-type: lower-alpha">
-<li>Implement all 3 methods that we discussed in class (Example 1.7, Page 9-10 of Ch. 6 Notes) to estimate the cdf of a normal distribution <span class="math inline">\(\Phi(x)\)</span>. Note that you will need to show some derivations for method 2.</li>
-<li>Compare your estimates with the output from the <code>R</code> function <code>pnorm()</code> for <span class="math inline">\(x = 0.5, 1, 2, 3\)</span>. Summarise your findings comparing the performance of the methods.</li>
-<li>For each method, compute an estimate of the variance of your Monte Carlo estimate of <span class="math inline">\(\Phi(2)\)</span>. Summarise your findings.</li>
-<li>For each method, compute a <span class="math inline">\(95\%\)</span> confidence interval for <span class="math inline">\(\Phi(2)\)</span>. Summarise your findings. Which CI is narrower and why does that matter?</li>
-</ol></li>
+<li><p>Compute a Monte Carlo estimate <span class="math inline">\(\hat{\theta}_1\)</span> of <span class="math display">\[
+ \theta = \int\limits_0^{0.5} e^{-x} dx
+ \]</span> by sampling from the Uniform(<span class="math inline">\(0, 0.5\)</span>) and estimate the variance of <span class="math inline">\(\hat{\theta}_1\)</span>. Find another Monte Carlo estimator <span class="math inline">\(\hat{\theta}_2\)</span> by sampling from the Exponential(1) distribution and estimating its variance.</p>
+<p>Which of the variances (of <span class="math inline">\(\hat{\theta}_1\)</span> or <span class="math inline">\(\hat{\theta}_2\)</span>) is smaller?</p></li>
+<li><p>Find two importance functions <span class="math inline">\(\phi_1\)</span> and <span class="math inline">\(\phi_2\)</span> that are supported on <span class="math inline">\((1, \infty)\)</span> and are “close” to <span class="math display">\[
+ h(x) = \frac{x^2}{\sqrt{2\pi}} e^{-x^2/2}, \qquad x &gt; 1.
+ \]</span></p>
+<p>Which of your two importance functions should produce the smallest variance in estimating <span class="math display">\[
+ \int\limits_1^\infty \frac{x^2}{\sqrt{2\pi}} e^{-x^2/2} dx
+ \]</span> by importance sampling? Explain.</p>
+<p><strong>Hint:</strong> You will need to create plots of <span class="math inline">\(\phi_1\)</span>, <span class="math inline">\(\phi_2\)</span>, and <span class="math inline">\(g(x)f(x)\)</span> as well as <span class="math inline">\(g(x)f(x)/\phi(x)\)</span> to answer this question.</p></li>
+<li><p>Obtain a Monte Carlo estimate of<br />
+<span class="math display">\[
+ \int\limits_1^\infty \frac{x^2}{\sqrt{2\pi}} e^{-x^2/2} dx
+ \]</span> using importance sampling.</p>
+<p><strong>Hint:</strong> You can use the better of the two importance functions you defined from problem 2.</p></li>
 </ol>
 <p>Turn in in a pdf of your homework to canvas. Your .Rmd file on rstudio.cloud will also be used in grading, so be sure they are identical and reproducible.</p>
 </div>

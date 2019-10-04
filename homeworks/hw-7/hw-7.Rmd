@@ -1,0 +1,80 @@
+---
+title: "STAT400 - Homework 7"
+author: "Your Name"
+date: "Due 10/22/2019 by 4pm"
+output: pdf_document
+---
+
+Be sure to `set.seed(400)` at the beginning of your homework.
+
+```{r}
+#reproducibility
+set.seed(400)
+```
+
+```{r, message=FALSE}
+# useful libraries
+library(tidyverse)
+```
+
+1. Compute a Monte Carlo estimate $\hat{\theta}_1$ of
+    $$
+    \theta = \int\limits_0^{0.5} e^{-x} dx
+    $$
+    by sampling from the Uniform($0, 0.5$) and estimate the variance of $\hat{\theta}_1$. Find another Monte Carlo estimator $\hat{\theta}_2$ by sampling from the Exponential(1) distribution and estimating its variance.
+    
+    Which of the variances (of $\hat{\theta}_1$ or $\hat{\theta}_2$) is smaller?
+    
+    ```{r}
+    # number of samples
+    m <- 1000
+    
+    ## first MC estimator and variance
+    ## use the Unif(0, .5) dsn
+    
+    ## second MC estimator and variance
+    ## use the Exp(1) dsn
+    
+    ## Compare estimated variances
+    
+    ```
+    
+    
+2. Find two importance functions $\phi_1$ and $\phi_2$ that are supported on $(1, \infty)$ and are "close" to
+    $$
+    h(x) = \frac{x^2}{\sqrt{2\pi}} e^{-x^2/2}, \qquad x > 1.
+    $$
+    
+    Which of your two importance functions should produce the smallest variance in estimating
+    $$
+    \int\limits_1^\infty \frac{x^2}{\sqrt{2\pi}} e^{-x^2/2} dx
+    $$
+    by importance sampling? Explain. 
+    
+    **Hint:** You will need to create plots of $\phi_1$, $\phi_2$, and $g(x)f(x)$ as well as $g(x)f(x)/\phi(x)$ to answer this question.
+    
+    ```{r}
+    ## create functions for h(x), phi_1(x), and phi_2(x)
+    
+    ## plot h(x), phi_1(x), and phi_2(x) together
+    
+    ## plot h(x)/phi_1(x) and h(x)/phi_1(x)
+    
+    ## which is better? Why?
+    ```
+    
+3. Obtain a Monte Carlo estimate of     
+    $$
+    \int\limits_1^\infty \frac{x^2}{\sqrt{2\pi}} e^{-x^2/2} dx
+    $$
+    using importance sampling.
+    
+    **Hint:** You can use the better of the two importance functions you defined from problem 2.
+    
+    ```{r}
+    ## number of samples to use
+    m <- 1000
+    
+    ## estimate the integral using importance sampling
+    
+    ```
