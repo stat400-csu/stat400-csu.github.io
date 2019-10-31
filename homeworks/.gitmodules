@@ -19,3 +19,6 @@
 [submodule "hw-7"]
 	path = hw-7
 	url = https://github.com/stat400-csu/hw-7.git
+[submodule "hw-8"]
+	path = hw-8
+	url = https://github.com/stat400-csu/hw-8.git
