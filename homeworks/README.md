@@ -16,3 +16,4 @@ Complete all homework in rstudio.cloud in the appropriate repo and turn in repor
 1. [Homework 6](https://github.com/stat400-csu/hw-6/) - Due Oct. 10
 1. [Homework 7](https://github.com/stat400-csu/hw-7/) - Due Oct. 22
 1. [Homework 8](https://github.com/stat400-csu/hw-8/) - Due Nov 7
+1. [Homework 9](https://github.com/stat400-csu/hw-9/) - Due Nov 14
