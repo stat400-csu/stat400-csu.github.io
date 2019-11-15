@@ -21,7 +21,7 @@ library(tidyverse)
     $$
     T^* = \frac{\overline{X} - 500}{s/{\sqrt{n}}} \sim t_{n = 1}.
     $$
-    for $\mu_a \not= 500$. We will examine the impact of effect size on power. Use $m = 1000$ for the number of Monte Carlo replications.
+    for $\mu_a \not= 500$. We will examine the impact of effect size on power. Use $m = 1000$ for the number of Monte Carlo replications and $\sigma = 100$.
     
     a. Set $n = 20$. Plot the estimated power or $\mu_a$ ranging between $350$ to $650$.
     b. Set $n = 100$ and repeat part a. Plot both power curves on the same plot. What happens to power as $n$ increases?
