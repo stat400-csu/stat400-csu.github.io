@@ -381,10 +381,10 @@ summary {
 <li>Compute the bootstrap bias and standard error for <span class="math inline">\(s\)</span>.</li>
 <li>Plot a histogram and qq-plot of the bootstrap distribution.</li>
 <li>Based on these results: (1) Is there evidence of bias and skewness of the bootstrap distribution for <span class="math inline">\(s\)</span>? (2) Is it appropriate to assume that the distribution of <span class="math inline">\(s\)</span> is normally distributed?</li>
-<li>Construct 4 types of intervals that we discussed in class by using <code>type=c(&quot;norm&quot;,&quot;basic&quot;, &quot;perc&quot;, &quot;bca&quot;)</code> in the boot.ci command</li>
-<li>Plot the four intervals onto a histogram of the sampling distribution using the command <code>geom_segment</code>.</li>
+<li>Use the BCa method to construct a 95% bootstrap CI for <span class="math inline">\(\sigma\)</span>.</li>
+<li>Plot the BCa interval onto your histogram of the sampling distribution using the command <code>geom_segment</code>.</li>
 </ol></li>
-<li>Construct a “studentized” bootstrap <span class="math inline">\(t\)</span> CI and also plot it onto your histogram of the sampling distribution.</li>
+<li>The results above aren’t very satisfying as the CIs are very wide. What do you think the problem is? Repeat part b. using a more appropriate analysis.</li>
 <li>What final result would you report to Nike? Explain your reasoning.</li>
 </ol></li>
 <li><p>For the <code>Verizon</code> dataset from the class handouts construct a 95% CI for the difference of two medians. Construct 4 types of intervals that we discussed in class by using <code>type=c(&quot;norm&quot;,&quot;basic&quot;, &quot;perc&quot;, &quot;bca&quot;)</code> in the boot.ci command.</p>
@@ -395,10 +395,10 @@ summary {
  H_a: \tilde{\mu}_1 \not= \tilde{\mu}_2 \\
  \]</span></li>
 </ol></li>
-<li><p>This data set is the <code>cars</code> data in <code>R</code>. The goal is to create a regression model about the relationship between stopping distance (<code>dist</code>) and speed (<code>speed</code>) in cars.</p>
+<li><p>This data set is the <code>catsM</code> data in the <code>boot</code> package. The goal is to create a regression model about the relationship between heart weight (<code>Hwt</code>) and body weights (<code>Bwt</code>) in adult cats.</p>
 <ol style="list-style-type: lower-alpha">
-<li>Create a scatter plot of <code>speed</code> vs. <code>dist</code> in <code>mpg</code> and describe the relationship.</li>
-<li>Fit a simple linear model of <code>dist</code> on <code>speed</code>. Describe the result, including diagnostic plots, and create 95% CIs for the coefficients.</li>
+<li>Create a scatter plot of <code>Hwt</code> vs. <code>Bwt</code> in <code>mpg</code> and describe the relationship.</li>
+<li>Fit a simple linear model of <code>Bwt</code> on <code>Hwt</code>. Describe the result, including diagnostic plots, and create 95% CIs for the coefficients.</li>
 <li>Perform the paired bootstrap and compute the bootstrap bias and standard error for the coefficients. Construct 4 types of intervals that we discussed in class by using <code>type=c(&quot;norm&quot;,&quot;basic&quot;, &quot;perc&quot;, &quot;bca&quot;)</code> in the boot.ci command.</li>
 <li>Perform the bootstrap using the residuals and compute the bootstrap bias and standard error for the coefficients. Construct 4 types of intervals that we discussed in class by using <code>type=c(&quot;norm&quot;,&quot;basic&quot;, &quot;perc&quot;, &quot;bca&quot;)</code> in the boot.ci command.</li>
 <li>Which method (simple linear regression, paired bootstrap, or bootstrap using the residuals) would you use for this dataset and why?</li>
