@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on STAT400: Statistical Computing</title>
+    <link>/</link>
+    <description>Recent content in Home on STAT400: Statistical Computing</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Calendar</title>
+      <link>/calendar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/calendar/</guid>
+      <description>    Date  Week  Topic  Content      2019-08-27  1  Introduction + R  Syllabus | Blank Notes | Script | Class Script    2019-08-29  1  R + ggplot2  Blank Notes | Script | Class Script    2019-09-03  2  ggplot2 + tidyverse  Blank Notes | Script | Class Script    2019-09-05  2  tidyverse + Rmarkdown  Class Script    2019-09-10  3  tidyverse + Probability for Stat Computing  Fixed tidyr Notes | Fixed tidyr Script | Rmarkdown Notes | Probability Notes | Class Script | Example Rmarkdown | Class Notes    2019-09-12  3  Probability for Stat Computing  tidyr Your Turn | tidyr YT Data | Class Notes    2019-09-17  4  Probability + Simulation  Distributions | Blank Notes | Script | Class Notes - Probability | Class Notes - Simulation | Class Script    2019-09-19  4  Simulation  Class Notes | Class Script    2019-09-24  5  Simulation  Class Notes    2019-09-26  5  Math Stat for Computing  Blank Notes | Class Notes - Simulation | Class Notes - Math Stat Recap    2019-10-01  6  Monte Carlo Integration  Blank Notes | Class Notes - Math Stat Recap | Class Notes - Monte Carlo | Class Script    2019-10-03  6  Monte Carlo Integration  Class Notes    2019-10-08  7  Monte Carlo Integration  Blank Notes | Class Notes - Monte Carlo | Class Notes - Importance Sampling    2019-10-10  7  Monte Carlo Integration  Midterm Facts | Class Notes    2019-10-15  8  Monte Carlo Integration  Class Notes    2019-10-17  8  Monte Carlo Integration  Class Notes | Class Script    2019-10-22  9  Review  Blank Review | Class Review    2019-10-24  9  Midterm     2019-10-29  10  GitHub and Project Information  Notes    2019-10-31  10  Monte Carlo Methods for Inference  Blank Notes | Class Notes    2019-11-05  11  Monte Carlo Methods for Inference  Class Notes | Class Script    2019-11-07  11  Monte Carlo Methods for Inference  Blank Notes | Class Notes | Class Script    2019-11-12  12  Monte Carlo Methods for Inference  Blank Notes | Class Notes | Class Script    2019-11-14  12  Bootstrapping  Blank Notes | Class Notes – MC Power | Class Script | Class Notes – Bootstrapping    2019-11-19  13  Bootstrapping  Blank Notes | Blank Script | Class Notes | Class Script    2019-11-21  13  Bootstrapping  Class Notes | Class Script    2019-11-26  14  Thanksgiving Break     2019-11-28  14  Thanksgiving Break     2019-12-03  15  Bootstrapping  Class Notes | Class Script    2019-12-05  15  Bootstrapping with Dependence  Blank Notes | Blank Script | Class Notes | Class Script    2019-12-10  16  Project Presentations  Group 5 Survey | Group 2 Survey    2019-12-12  16  Project Presentations  Group 1 Survey | Group 4 Survey | Group 3 Survey     </description>
+    </item>
+    
+    <item>
+      <title>Homework</title>
+      <link>/homework/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/homework/</guid>
+      <description>  All homework assignments are due at 4pm on the date listed in the table below.
+  Homework  Due  Assignment      1  2019-09-05  Homework 1 – ggplot2    2  2019-09-12  Homework 2 – tidyverse    3  2019-09-19  Homework 3 – Probability Recap    4  2019-09-26  Homework 4 – Inverse Sampling and Accept-Reject    5  2019-10-03  Homework 5 – Sampling    6  2019-10-10  Homework 6 – Sampling and MC Integration    7  2019-10-22  Homework 7 – MC Integration and Importance Sampling    8  2019-11-07  Homework 8 – MC Estimation of Coverage    9  2019-11-14  Homework 9 – MC Estimation of Type I Error    10  2019-11-21  Homework 10 – MC Estimation of Power &amp;amp; Bootstrapping    11  2019-12-05  Homework 11 – Bootstrapping     </description>
+    </item>
+    
+    <item>
+      <title>Project</title>
+      <link>/project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/project/</guid>
+      <description>The goal of the project is to use the methods we have learned in class and extend our knowledge in smaller groups. Below is an example of a project description. If your group has an alternative proposal, please schedule time to discuss with me prior to the proposal due date.
+One example project is to first to identify an article in the scientific/statistical literature that reports on a Monte Carlo study that was conducted to evaluate a statistical method.</description>
+    </item>
+    
+    <item>
+      <title>Syllabus</title>
+      <link>/syllabus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/syllabus/</guid>
+      <description>Course Objectives Computationally intensive statistical methods are a key component to modern data analysis methods. After completing this course, a successful student will be able to use statistical software to implement both traditional and state-of-the-art methods in computational statistics as well as recognize situations where these methods are required.
+ Prerequisites CS160 or CS163 or CS164 or (MATH151 and MATH153)
+STAT 420 or concurrent enrollment.
+ Texts Statistical Computing with R (2019), M.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,48 @@
+# hw-3
+
+Homework 3 in STAT400: Computational Statistics @ CSU
+
+## Assignment
+
+1. Let $X \sim \text{Uniform}(a, b)$. Derive $E[X]$ and $Var[X]$.
+
+2. Let $X \sim \text{Exponential}(\alpha)$.
+    a. Derive $E[X]$ (show the parts we skipped in class).
+    b. What are the parameter(s) of the exponential distribution and what values can they take?
+  
+3. Let $X$ = the outcome when a fair die is rolled.
+    a. Find $E[X]$
+    b. Find $Var[X]$
+    c. Before the die is rolled you are offered either $1/3.5 = \$0.29$ (guaranteed amount) or $h(X) = 1/X$ dollars (random amount). Would you accept the guaranteed amount or would you gamble? In your answer, discuss what this means about $1/E[X]$ as compared to $E[1/X]$. In particular, does $1/E[X]$ always equal $E[1/X]$?
+    
+4. Give three examples of Bernoulli random variables.
+
+5. For each of the random variables defined below, describe the sample space (set of possible values) and state whether the random variable is continuous or discrete.
+    a. $X=$ the number of unbroken eggs in a dozen eggs.
+    b. $Y=$ the pH of a randomly chosen soil sample.
+    c. $Z=$ the number of CSU students who skipped their first class.
+    d. $W=$ the distance between CSU and the local residence of a randomly chosen CSU student.
+    
+6. Let $X=$ the number of days of sick leave taken by a randomly selected employee of a large company during a particular year. The maximum allowable days per year is $14$. Let the following values of the cdf be defined
+    $$
+    F(0) = 0.58, F(1) = 0.72, F(2) = 0.76, F(4) = 0.88, F(5) = 0.94.
+    $$
+    a. What is the sample space of $X$?
+    b. Compute $P(2 \le X \le 5)$
+    c. Compute $P(X \ge 5)$ and $P(X > 5)$.
+
+7. The cdf for a random variable $X$ is given below.
+    $$
+    F_X(x) = \begin{cases}
+    0 & x < -2 \\
+    \frac{1}{2} + \frac{3}{32}(4x - x^3/3) & -2 \le x < 2 \\
+    1 & x \ge 2
+    \end{cases}
+    $$
+    a. Compute $P(X > 0.5)$
+    b. Find $f_X(x)$.
+    c. The median $\tilde{\mu}$ of a continuous random variable is the $50^{th}$ percentile of the distribution, given by $0.5 = F_X(\tilde{\mu})$. Show that $\tilde{\mu} = 0$.
+    
+
+
+Turn in in a pdf of your homework to canvas. 
