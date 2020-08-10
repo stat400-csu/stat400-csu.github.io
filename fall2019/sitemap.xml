@@ -3,31 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/calendar/</loc>
+    <loc>/./fall2019/calendar/</loc>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>/./fall2019/categories/</loc>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>/./fall2019/</loc>
   </url>
   
   <url>
-    <loc>/homework/</loc>
+    <loc>/./fall2019/homework/</loc>
   </url>
   
   <url>
-    <loc>/project/</loc>
+    <loc>/./fall2019/project/</loc>
   </url>
   
   <url>
-    <loc>/syllabus/</loc>
+    <loc>/./fall2019/syllabus/</loc>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>/./fall2019/tags/</loc>
   </url>
   
 </urlset>
