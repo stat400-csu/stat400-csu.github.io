@@ -31,16 +31,6 @@
     
     <item>
       <title>Project</title>
-      <link>/project/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/project/</guid>
-      <description>The goal of the project is to use the methods we have learned in class and extend our knowledge in smaller groups. Below is an example of a project description. If your group has an alternative proposal, please schedule time to discuss with me prior to the proposal due date.
-One example project is to first to identify an article in the scientific/statistical literature that reports on a Monte Carlo study that was conducted to evaluate a statistical method.</description>
-    </item>
-    
-    <item>
-      <title>Project</title>
       <link>/project_/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -56,9 +46,7 @@ One example project is to first to identify an article in the scientific/statist
       
       <guid>/syllabus/</guid>
       <description>Course Objectives Computationally intensive statistical methods are a key component to modern data analysis methods. After completing this course, a successful student will be able to use statistical software to implement both traditional and state-of-the-art methods in computational statistics as well as recognize situations where these methods are required.
- Prerequisites CS160 or CS163 or CS164 or (MATH151 and MATH153)
-STAT 420 or concurrent enrollment.
- Texts Statistical Computing with R (2019), M.</description>
+ COVID-19 This will be a learn-as-we-go situation. Please be fexible! We’re going to try to have live lectures on Zoom, which I will record and post to Canvas.</description>
     </item>
     
   </channel>
