@@ -1,6 +1,6 @@
 ## STAT400 @ CSU
 ## Homework 1
-## Due date: Sept. 5 by 4pm
+## Due date: Sept. 10 by 4pm
 ## Your name here
 
 ## load the data
