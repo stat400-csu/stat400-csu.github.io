@@ -48,16 +48,13 @@ library(tidyverse)
 2. Continue Problem 2 from Homework 4 (the Rayleigh distribution). Goal: you will use the code that you created last week for Problem 2. to learn more about sampling distributions. Here we are going to investigate the sampling distribution of the median of the Rayleigh distribution. 
 
     a. Generate $n = 3$ samples from a Rayleigh(1) distribution and estimate the median of the sample. Now repeat this process to generate $m=100$ estimated medians.
-    b. Repeat part a but using $n=100$ samples from a Raleigh distribution.
+    b. Repeat part a but using $n=100$ samples from a Rayleigh distribution.
     c. Repeat parts a and b but using $m=1000$.
     d. Draw a histogram of the estimated medians for parts a-c. This is the sampling distribution of the median of the Rayleigh(1) distribution. Compare your histograms from parts a-c. Make sure that your x axes have the same range for all 4 plots (see `?ggplot2::xlim`). And put all the plots together. You can use this format to start your code chunk to get the plots to appear together and smaller:
     
         `{r fig.show='hold', out.width='50%'}`
         
-    e. Generate $n = 3$ samples from a Rayleigh(1) distribution and estimate the median of the sample. Now repeat this process to generate $m=100$ estimated medians.
-    f. Repeat part e but using $n=100$ samples from a Raleigh distribution.
-    g. Repeat parts e and f but using $m=1000$.
-    h. Let $\hat{\theta}_i$ denote the estimated median from the $i$th sample. Estimate $E[\hat{\theta}]$, $se(\hat{\theta})$, and $bias(\hat{\theta})$ for parts e-g. Compare your estimates from parts e-g. 
+    e. Let $\hat{\theta}_i$ denote the estimated median from the $i$th sample. Estimate $E[\hat{\theta}]$, $se(\hat{\theta})$, and $bias(\hat{\theta})$ for parts a-c. Compare your estimates from parts a-c. 
         
     ```{r, fig.show='hold', out.width='50%'}
     # pull in old rayleigh sampling function from last homework
@@ -71,14 +68,6 @@ library(tidyverse)
     # c. n = 100, m = 1000
     
     # d. draw histograms
-    
-    # e. n = 3, m = 100
-    
-    # f. n = 100, m = 100
-    
-    # g. n = 3, m = 1000
-    
-    # g. n = 100, m = 1000
     
     # show table of expected value, se, and bias
     
