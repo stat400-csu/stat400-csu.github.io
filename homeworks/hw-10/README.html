@@ -370,38 +370,25 @@ summary {
 <p>Homework 10 in STAT400 @ CSU</p>
 <div id="assignment" class="section level2">
 <h2>Assignment</h2>
-<p>Be sure to <code>set.seed(400)</code> at the beginning of your homework. Please use <span class="math inline">\(2000\)</span> bootstrap samples in the problems below.</p>
+<p>Be sure to <code>set.seed(400)</code> at the beginning of your homework.</p>
 <ol style="list-style-type: decimal">
-<li><p>Nike has hired you to help analyze their data on their customers who run. They want to make sure that you understand how their running gear fits their customers. A sample of 25 randomly selected customers was selected, and the customers were asked to submit their weights. The data:</p>
-<pre><code>  wt &lt;- c(149, 136, 139, 117, 137, 132, 122, 130, 134, 153, 140, 151, 203, 143, 145, 123, 127, 146, 139, 118, 143, 123, 133, 153, 136)</code></pre>
+<li><p>Suppose <span class="math inline">\(X_1, \dots, X_{n}\)</span> is a random sample from a <span class="math inline">\(N(\mu, \sigma^2)\)</span> distribution. Consider the test <span class="math inline">\(H_0: \mu = 500\)</span> vs. <span class="math inline">\(H_a = \mu \not= 500\)</span> with <span class="math inline">\(\alpha = 0.05\)</span>. Then under the alternative hypothesis, <span class="math display">\[
+ T^* = \frac{\overline{X} - 500}{s/{\sqrt{n}}} \sim t_{n - 1}.
+ \]</span> for <span class="math inline">\(\mu_a \not= 500\)</span>. We will examine the impact of effect size on power. Use <span class="math inline">\(m = 1000\)</span> for the number of Monte Carlo replications and <span class="math inline">\(\sigma = 100\)</span>.</p>
 <ol style="list-style-type: lower-alpha">
-<li>Calculate the sample standard deviation <span class="math inline">\(s\)</span> for these weights.</li>
-<li>To do the following, use the <code>boot</code> and <code>simpleboot</code> packages as shown in the class handouts.
-<ol style="list-style-type: lower-roman">
-<li>Compute the bootstrap bias and standard error for <span class="math inline">\(s\)</span>.</li>
-<li>Plot a histogram and qq-plot of the bootstrap distribution.</li>
-<li>Based on these results: (1) Is there evidence of bias and skewness of the bootstrap distribution for <span class="math inline">\(s\)</span>? (2) Is it appropriate to assume that the distribution of <span class="math inline">\(s\)</span> is normally distributed?</li>
-<li>Construct 4 types of intervals that we discussed in class by using <code>type=c(&quot;norm&quot;,&quot;basic&quot;, &quot;perc&quot;, &quot;bca&quot;)</code> in the boot.ci command</li>
-<li>Plot the four intervals onto a histogram of the sampling distribution using the command <code>geom_segment</code>.</li>
+<li>Set <span class="math inline">\(n = 20\)</span>. Plot the estimated power or <span class="math inline">\(\mu_a\)</span> ranging between <span class="math inline">\(350\)</span> to <span class="math inline">\(650\)</span>.</li>
+<li>Set <span class="math inline">\(n = 100\)</span> and repeat part a. Plot both power curves on the same plot. What happens to power as <span class="math inline">\(n\)</span> increases?</li>
+<li>What is the estimated power when <span class="math inline">\(\mu_a = 450\)</span> for <span class="math inline">\(n = 20\)</span> and <span class="math inline">\(n = 100\)</span>?</li>
+<li>When <span class="math inline">\(n = 20\)</span>, what effect size will you need to achieve power of approximately <span class="math inline">\(0.80\)</span>?</li>
 </ol></li>
-<li>Construct a “studentized” bootstrap <span class="math inline">\(t\)</span> CI and also plot it onto your histogram of the sampling distribution.</li>
-<li>What final result would you report to Nike? Explain your reasoning.</li>
-</ol></li>
-<li><p>For the <code>Verizon</code> dataset from the class handouts construct a 95% CI for the difference of two medians. Construct 4 types of intervals that we discussed in class by using <code>type=c(&quot;norm&quot;,&quot;basic&quot;, &quot;perc&quot;, &quot;bca&quot;)</code> in the boot.ci command.</p>
+<li><p>We will use the <code>CommuteAtlanta</code> data in the <code>Lock5Data</code> package in <code>R</code>. For information on the data, use the following commands.</p>
+<pre><code>library(Lock5Data)
+?CommuteAtlanta</code></pre>
 <ol style="list-style-type: lower-alpha">
-<li>Are the intervals similar for all the methods? Why or why not?</li>
-<li>Let <span class="math inline">\(\tilde{\mu}_1\)</span> = the population median repair time for ILEC customers and <span class="math inline">\(\tilde{\mu}_2\)</span> = the population median of repair time for CLEC customers. Based on the results of the BCa interval, would you reject this hypothesis? Explain your answer. <span class="math display">\[
- H_0: \tilde{\mu}_1 = \tilde{\mu}_2 \\
- H_a: \tilde{\mu}_1 \not= \tilde{\mu}_2 \\
- \]</span></li>
-</ol></li>
-<li><p>This data set is the <code>cars</code> data in <code>R</code>. The goal is to create a regression model about the relationship between stopping distance (<code>dist</code>) and speed (<code>speed</code>) in cars.</p>
-<ol style="list-style-type: lower-alpha">
-<li>Create a scatter plot of <code>speed</code> vs. <code>dist</code> in <code>mpg</code> and describe the relationship.</li>
-<li>Fit a simple linear model of <code>dist</code> on <code>speed</code>. Describe the result, including diagnostic plots, and create 95% CIs for the coefficients.</li>
-<li>Perform the paired bootstrap and compute the bootstrap bias and standard error for the coefficients. Construct 4 types of intervals that we discussed in class by using <code>type=c(&quot;norm&quot;,&quot;basic&quot;, &quot;perc&quot;, &quot;bca&quot;)</code> in the boot.ci command.</li>
-<li>Perform the bootstrap using the residuals and compute the bootstrap bias and standard error for the coefficients. Construct 4 types of intervals that we discussed in class by using <code>type=c(&quot;norm&quot;,&quot;basic&quot;, &quot;perc&quot;, &quot;bca&quot;)</code> in the boot.ci command.</li>
-<li>Which method (simple linear regression, paired bootstrap, or bootstrap using the residuals) would you use for this dataset and why?</li>
+<li>Draw a histogram of the commute times. Describe the distribution.</li>
+<li>Approximate the sampling distribution of the mean of the commute times based on <span class="math inline">\(B = 2000\)</span> bootstrap samples. Plot the histogram of the bootstrap samples. Describe the distribution.</li>
+<li>Use bootstrapping to estimate the standard error and the bias of the mean of commute times.</li>
+<li>Compare your estimates in c. to the estimates of the standard error of the mean and the bias of the mean based on theory. (You can use your prior knowledge of the theory or derive these quantities).</li>
 </ol></li>
 </ol>
 <p>Turn in in a pdf of your homework to canvas. Your .Rmd file on rstudio.cloud will also be used in grading, so be sure they are identical and reproducible.</p>

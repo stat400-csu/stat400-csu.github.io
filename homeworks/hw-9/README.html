@@ -367,28 +367,17 @@ summary {
 
 <div id="hw-9" class="section level1">
 <h1>hw-9</h1>
-<p>Homework 9 in STAT400 @ CSU</p>
+<p>Homework 9 in STAT400: Computational Statistics @ CSU</p>
 <div id="assignment" class="section level2">
 <h2>Assignment</h2>
 <p>Be sure to <code>set.seed(400)</code> at the beginning of your homework.</p>
 <ol style="list-style-type: decimal">
-<li><p>Suppose <span class="math inline">\(X_1, \dots, X_{n}\)</span> is a random sample from a <span class="math inline">\(N(\mu, \sigma^2)\)</span> distribution. Consider the test <span class="math inline">\(H_0: \mu = 500\)</span> vs. <span class="math inline">\(H_a = \mu \not= 500\)</span> with <span class="math inline">\(\alpha = 0.05\)</span>. Then under the alternative hypothesis, <span class="math display">\[
- T^* = \frac{\overline{X} - 500}{s/{\sqrt{n}}} \sim t_{n - 1}.
- \]</span> for <span class="math inline">\(\mu_a \not= 500\)</span>. We will examine the impact of effect size on power. Use <span class="math inline">\(m = 1000\)</span> for the number of Monte Carlo replications and <span class="math inline">\(\sigma = 100\)</span>.</p>
+<li><p>Use the Monte Carlo simulation to investigate whether the empirical Type I error rate of the <span class="math inline">\(t\)</span>-test is approximately equal to the nominal significance level when the sampled population is non-normal.</p>
 <ol style="list-style-type: lower-alpha">
-<li>Set <span class="math inline">\(n = 20\)</span>. Plot the estimated power or <span class="math inline">\(\mu_a\)</span> ranging between <span class="math inline">\(350\)</span> to <span class="math inline">\(650\)</span>.</li>
-<li>Set <span class="math inline">\(n = 100\)</span> and repeat part a. Plot both power curves on the same plot. What happens to power as <span class="math inline">\(n\)</span> increases?</li>
-<li>What is the estimated power when <span class="math inline">\(\mu_a = 450\)</span> for <span class="math inline">\(n = 20\)</span> and <span class="math inline">\(n = 100\)</span>?</li>
-<li>When <span class="math inline">\(n = 20\)</span>, what effect size will you need to achieve power of approximately <span class="math inline">\(0.80\)</span>?</li>
-</ol></li>
-<li><p>We will use the <code>CommuteAtlanta</code> data in the <code>Lock5Data</code> package in <code>R</code>. For information on the data, use the following commands.</p>
-<pre><code>library(Lock5Data)
-?CommuteAtlanta</code></pre>
-<ol style="list-style-type: lower-alpha">
-<li>Draw a histogram of the commute times. Describe the distribution.</li>
-<li>Approximate the sampling distribution of the mean of the commute times based on <span class="math inline">\(B = 2000\)</span> bootstrap samples. Plot the histogram of the bootstrap samples. Describe the distribution.</li>
-<li>Use bootstrapping to estimate the standard error and the bias of the mean of commute times.</li>
-<li>Compare your estimates in c. to the estimates of the standard error of the mean and the bias of the mean based on theory. (You can use your prior knowledge of the theory or derive these quantities).</li>
+<li><p>For <span class="math inline">\(n = 5, 10, 30, 100, 500, 1000\)</span>, investigate the empirical type I error for a test of <span class="math inline">\(H_0: \mu = 1\)</span> vs. <span class="math inline">\(H_a: \mu \not= 1\)</span> when <span class="math inline">\(X_1, \dots, X_n \sim \chi^2(1)\)</span> with <span class="math inline">\(m = 2000\)</span> Monte Carlo samples with nominal <span class="math inline">\(\alpha = .05\)</span>.</p></li>
+<li><p>For <span class="math inline">\(n = 5, 10, 30, 100, 500, 1000\)</span>, investigate the empirical type I error for a test of <span class="math inline">\(H_0: \mu = 1\)</span> vs. <span class="math inline">\(H_a: \mu \not= 1\)</span> when <span class="math inline">\(X_1, \dots, X_n \sim Unif[0, 2]\)</span> with <span class="math inline">\(m = 2000\)</span> Monte Carlo samples with nominal <span class="math inline">\(\alpha = .05\)</span>.</p></li>
+<li><p>For <span class="math inline">\(n = 5, 10, 30, 100, 500, 1000\)</span>, investigate the empirical type I error for a test of <span class="math inline">\(H_0: \mu = 1\)</span> vs. <span class="math inline">\(H_a: \mu \not= 1\)</span> when <span class="math inline">\(X_1, \dots, X_n \sim Exponential(1)\)</span> with <span class="math inline">\(m = 2000\)</span> Monte Carlo samples with nominal <span class="math inline">\(\alpha = .05\)</span>.</p></li>
+<li><p>Compare your results in a.-c. in a table. What can you say about the departures from Normality as they relate to the Type I error rate of the <span class="math inline">\(t\)</span>-test?</p></li>
 </ol></li>
 </ol>
 <p>Turn in in a pdf of your homework to canvas. Your .Rmd file on rstudio.cloud will also be used in grading, so be sure they are identical and reproducible.</p>

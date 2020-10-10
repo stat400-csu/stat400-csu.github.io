@@ -384,17 +384,6 @@ summary {
  \theta = \int\limits_0^{0.5} e^{-x} dx
  \]</span> by sampling from the Uniform(<span class="math inline">\(0, 0.5\)</span>) and estimate the variance of <span class="math inline">\(\hat{\theta}_1\)</span>. Find another Monte Carlo estimator <span class="math inline">\(\hat{\theta}_2\)</span> by sampling from the Exponential(1) distribution and estimating its variance.</p>
 <p>Which of the variances (of <span class="math inline">\(\hat{\theta}_1\)</span> or <span class="math inline">\(\hat{\theta}_2\)</span>) is smaller?</p></li>
-<li><p>Find two importance functions <span class="math inline">\(\phi_1\)</span> and <span class="math inline">\(\phi_2\)</span> that are supported on <span class="math inline">\((1, \infty)\)</span> and are “close” to <span class="math display">\[
- h(x) = \frac{x^2}{\sqrt{2\pi}} e^{-x^2/2}, \qquad x &gt; 1.
- \]</span></p>
-<p>Which of your two importance functions should produce the smallest variance in estimating <span class="math display">\[
- \int\limits_1^\infty \frac{x^2}{\sqrt{2\pi}} e^{-x^2/2} dx
- \]</span> by importance sampling? Explain.</p>
-<p><strong>Hint:</strong> You will need to create plots of <span class="math inline">\(\phi_1\)</span>, <span class="math inline">\(\phi_2\)</span>, and <span class="math inline">\(g(x)f(x)\)</span> as well as <span class="math inline">\(g(x)f(x)/\phi(x)\)</span> to answer this question.</p></li>
-<li><p>Obtain a Monte Carlo estimate of<br />
-<span class="math display">\[
- \int\limits_1^\infty \frac{x^2}{\sqrt{2\pi}} e^{-x^2/2} dx
- \]</span> using importance sampling with the two importance sampling functions you chose in Problem 2 (<span class="math inline">\(\phi_1\)</span> and <span class="math inline">\(\phi_2\)</span>). Obtain an estimate of the variance for each and compare.</p></li>
 </ol>
 <p>Turn in in a pdf of your homework to canvas. Your .Rmd file on rstudio.cloud will also be used in grading, so be sure they are identical and reproducible.</p>
 </div>

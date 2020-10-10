@@ -372,13 +372,22 @@ summary {
 <h2>Assignment</h2>
 <p>Be sure to <code>set.seed(400)</code> at the beginning of your homework.</p>
 <ol style="list-style-type: decimal">
-<li><p>Use the Monte Carlo simulation to investigate whether the empirical Type I error rate of the <span class="math inline">\(t\)</span>-test is approximately equal to the nominal significance level when the sampled population is non-normal.</p>
+<li><p>Sign up for a GitHub account (<a href="https://github.com" class="uri">https://github.com</a>) and request an educational account (<a href="https://education.github.com/benefits" class="uri">https://education.github.com/benefits</a>). What is your GitHub user name?</p></li>
+<li><p><em>Coverage for a two-sided CI for a proportion <span class="math inline">\(\pi\)</span>.</em></p>
+<p>If you have a sample of data that consists of <span class="math inline">\(0\)</span>’s and <span class="math inline">\(1\)</span>’s, you may want to estimate the proportion of <span class="math inline">\(1\)</span>’ based on the sample. In this problem we will compare the properties of two different estimators of the proportion <span class="math inline">\(\pi\)</span>. The goal of the problem is to compare the coverage for confidence intervals computed using the two different estimators.</p>
+<p>Let <span class="math inline">\(p =\)</span> the proportion of <span class="math inline">\(1\)</span>’s in a sample of <span class="math inline">\(0\)</span>’s and <span class="math inline">\(1\)</span>’s. So, <span class="math inline">\(p\)</span> estimates <span class="math inline">\(\pi\)</span>. Compute the coverage for a <span class="math inline">\(95%\)</span> CI for <span class="math inline">\(\pi\)</span> using the approaches below.</p>
+<p>95% Confidence Intervals for <span class="math inline">\(\pi\)</span>:</p>
+<p><strong>Method 1</strong>: Standard approach - use <span class="math inline">\(p \pm z_{0.975}\sqrt{p(1 - p)/n}\)</span>, where <span class="math inline">\(z_{0.975}\)</span> = the <span class="math inline">\(0.975\)</span> quantile from a <span class="math inline">\(N(0,1)\)</span>.</p>
+<p><strong>Method 2</strong>: This method uses a different estimator for <span class="math inline">\(\pi\)</span>. First, add 2 successes and 2 failures to your data and then use the interval from Method 1. Note that you need to adjust both <span class="math inline">\(p\)</span> and <span class="math inline">\(n\)</span> from Method 1.</p>
+<p>For the following, let <span class="math inline">\(m = 1000\)</span> in your Monte Carlo estimations.</p>
 <ol style="list-style-type: lower-alpha">
-<li><p>For <span class="math inline">\(n = 5, 10, 30, 100, 500, 1000\)</span>, investigate the empirical type I error for a test of <span class="math inline">\(H_0: \mu = 1\)</span> vs. <span class="math inline">\(H_a: \mu \not= 1\)</span> when <span class="math inline">\(X_1, \dots, X_n \sim \chi^2(1)\)</span> with <span class="math inline">\(m = 2000\)</span> Monte Carlo samples with nominal <span class="math inline">\(\alpha = .05\)</span>.</p></li>
-<li><p>For <span class="math inline">\(n = 5, 10, 30, 100, 500, 1000\)</span>, investigate the empirical type I error for a test of <span class="math inline">\(H_0: \mu = 1\)</span> vs. <span class="math inline">\(H_a: \mu \not= 1\)</span> when <span class="math inline">\(X_1, \dots, X_n \sim Unif[0, 2]\)</span> with <span class="math inline">\(m = 2000\)</span> Monte Carlo samples with nominal <span class="math inline">\(\alpha = .05\)</span>.</p></li>
-<li><p>For <span class="math inline">\(n = 5, 10, 30, 100, 500, 1000\)</span>, investigate the empirical type I error for a test of <span class="math inline">\(H_0: \mu = 1\)</span> vs. <span class="math inline">\(H_a: \mu \not= 1\)</span> when <span class="math inline">\(X_1, \dots, X_n \sim Exponential(1)\)</span> with <span class="math inline">\(m = 2000\)</span> Monte Carlo samples with nominal <span class="math inline">\(\alpha = .05\)</span>.</p></li>
-<li><p>Compare your results in a.-c. in a table. What can you say about the departures from Normality as they relate to the Type I error rate of the <span class="math inline">\(t\)</span>-test?</p></li>
-</ol></li>
+<li>Simulate <span class="math inline">\(n=20\)</span> observations from a Bernoulli distribution with <span class="math inline">\(\pi=0.05\)</span>. Compare the empirical coverage for methods 1 and 2. Use the same data to compare methods 1 and 2.</li>
+<li>Simulate <span class="math inline">\(n=100\)</span> observations from a Bernoulli distribution with <span class="math inline">\(\pi=0.05\)</span>. Compare the empirical coverage for methods 1 and 2. Use the same data to compare methods 1 and 2.</li>
+<li>Repeat problems a. and b. but set <span class="math inline">\(\pi=0.1\)</span> when you simulate the data.</li>
+<li>Repeat problems a. and b. but set <span class="math inline">\(\pi=0.5\)</span> when you simulate the data.</li>
+<li>Summarize your findings in a table. Which method do you recommend based on these results?</li>
+</ol>
+<p>Note: Method 2 is from the article “Approximate Is Better than”Exact&quot; for Interval Estimation of Binomial Proportions,&quot; by Alan Agresti and Brent A. Coull, <em>The American Statistician</em>, Vol. 52, No. 2 (May, 1998), pp. 119-126</p></li>
 </ol>
 <p>Turn in in a pdf of your homework to canvas. Your .Rmd file on rstudio.cloud will also be used in grading, so be sure they are identical and reproducible.</p>
 </div>
