@@ -32,10 +32,6 @@ Be sure to `set.seed(400)` at the beginning of your homework.
     
         `{r fig.show='hold', out.width='50%'}`
         
-    e. Let $\hat{\theta}_i$ denote the estimated median from the $i$th sample. Estimate $E[\hat{\theta}]$, $se(\hat{\theta})$, and $bias(\hat{\theta})$ for parts a-c. Compare your estimates from parts a-c.
-        
 3. A random variable $X$ has the Lognormal$(\mu, \sigma)$ distribution if $X = e^Y$, where $Y = N(\mu, \sigma^2)$. That is, $\log X \sim N(\mu, \sigma^2)$. Write a function to generate from a Lognormal$(\mu, \sigma)$ distribution using a transformation method and generate a sample of size $1000$ for $\mu = 1$, $\sigma = 0.25$. Compare the histogram with the lognormal density curve given by the `dlnorm` function in `R`.
-
-4. Generate a random sample of size $1000$ from a normal location mixture. The components of the mixture have $N(0, 1)$ and $N(3, 1)$ distributions with mixing probabilities $p_1$ and $p_2 = 1 - p_1$. Graph the histogram of the sample with density superimposed for $p_1 = 0.1, \dots, 0.9$ and observe whether the mixture appears to be bimodal. Make a conjecture about the values of $p_1$ that produce bimodal mixtures.
 
 Turn in in a pdf of your homework to canvas. Your .Rmd file on rstudio.cloud will also be used in grading, so be sure they are identical and reproducible.
