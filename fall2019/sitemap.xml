@@ -1,33 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
-    <loc>/./fall2019/calendar/</loc>
+    <loc>fall2019/calendar/</loc>
+  </url><url>
+    <loc>fall2019/categories/</loc>
+  </url><url>
+    <loc>fall2019/</loc>
+  </url><url>
+    <loc>fall2019/homework/</loc>
+  </url><url>
+    <loc>fall2019/project/</loc>
+  </url><url>
+    <loc>fall2019/syllabus/</loc>
+  </url><url>
+    <loc>fall2019/tags/</loc>
   </url>
-  
-  <url>
-    <loc>/./fall2019/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>/./fall2019/</loc>
-  </url>
-  
-  <url>
-    <loc>/./fall2019/homework/</loc>
-  </url>
-  
-  <url>
-    <loc>/./fall2019/project/</loc>
-  </url>
-  
-  <url>
-    <loc>/./fall2019/syllabus/</loc>
-  </url>
-  
-  <url>
-    <loc>/./fall2019/tags/</loc>
-  </url>
-  
 </urlset>
