@@ -30,4 +30,17 @@ Use the skills you have learned in class to find interesting subsets and graphic
 
 Create graphical summaries of the data using what we've learned in class and `ggplot2` and describe your findings. 
 
-Turn in in a pdf of your analysis to canvas. For this first assignment you can paste plots into a word/google docs document and add you commentary (if you have already had experience, please feel free to use Rmarkdown or LaTeX instead). Your script on rstudio.cloud will also be used in grading, so be sure they are identical.
+Turn in in a pdf of your analysis to canvas. For this first assignment you can paste plots into a word/google docs document and add you commentary (if you have already had experience, please feel free to use Rmarkdown or LaTeX instead). Your script on the server will also be used in grading, so be sure they are identical.
+
+**Be sure to share your server project with the instructor and grader:**
+
+1. Open your hw-1 project on liberator.stat.colostate.edu
+2. Click the drop down on the project (top right side) > Share Project...
+    
+    <img src="share_project.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" width="25%" />
+  
+3. Click the drop down and add "stat400instructors" to your project.
+
+    <img src="share_dropdown.png" title="plot of chunk unnamed-chunk-3" alt="plot of chunk unnamed-chunk-3" width="25%" />
+
+This is how you **receive points** for reproducibility on your homework!
