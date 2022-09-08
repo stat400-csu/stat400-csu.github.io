@@ -17,4 +17,17 @@ Each of these data sets are included in this repo under the `data/` folder.
 2. Apply your function to all years available of the city employees data (2010-2018) and store your results in a single data frame (see `rbind` for binding rows of data frames together).
 3. For those departments that have over 25 unique job titles, make a plot that depicts earnings over time by department in the city of Fort Collins.
 
-Turn in in a pdf of your homework to canvas. Your .Rmd file on rstudio.cloud will also be used in grading, so be sure they are identical and reproducible.
+Turn in in a pdf of your homework to canvas. Your .Rmd file on the server will also be used in grading, so be sure they are identical and reproducible.
+
+**Be sure to share your server project with the instructor and grader:**
+
+1. Open your hw-1 project on liberator.stat.colostate.edu
+2. Click the drop down on the project (top right side) > Share Project...
+    
+    <img src="share_project.png" title="plot of chunk unnamed-chunk-1" alt="plot of chunk unnamed-chunk-1" width="25%" />
+  
+3. Click the drop down and add "stat400instructors" to your project.
+
+    <img src="share_dropdown.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" width="25%" />
+
+This is how you **receive points** for reproducibility on your homework!
