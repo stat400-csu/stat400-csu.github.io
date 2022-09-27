@@ -9,25 +9,25 @@
 	url = git@github.com:stat400-csu/hw-3.git
 [submodule "hw-4"]
 	path = hw-4
-	url = https://github.com/stat400-csu/hw-4.git
+	url = git@github.com:stat400-csu/hw-4.git
 [submodule "hw-5"]
 	path = hw-5
-	url = https://github.com/stat400-csu/hw-5.git
+	url = git@github.com:stat400-csu/hw-5.git
 [submodule "hw-6"]
 	path = hw-6
-	url = https://github.com/stat400-csu/hw-6.git
+	url = git@github.com:stat400-csu/hw-6.git
 [submodule "hw-7"]
 	path = hw-7
-	url = https://github.com/stat400-csu/hw-7.git
+	url = git@github.com:stat400-csu/hw-7.git
 [submodule "hw-8"]
 	path = hw-8
-	url = https://github.com/stat400-csu/hw-8.git
+	url = git@github.com:stat400-csu/hw-8.git
 [submodule "hw-9"]
 	path = hw-9
-	url = https://github.com/stat400-csu/hw-9.git
+	url = git@github.com:stat400-csu/hw-9.git
 [submodule "hw-10"]
 	path = hw-10
-	url = https://github.com/stat400-csu/hw-10.git
+	url = git@github.com:stat400-csu/hw-10.git
 [submodule "hw-11"]
 	path = hw-11
-	url = https://github.com/stat400-csu/hw-11.git
+	url = git@github.com:stat400-csu/hw-11.git
