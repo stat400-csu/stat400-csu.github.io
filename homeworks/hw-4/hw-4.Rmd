@@ -1,7 +1,7 @@
 ---
 title: "STAT400 - Homework 4"
 author: "Your Name"
-date: "Due 10/01/2019 by 4pm"
+date: "Due 09/29/2022 by 4pm"
 output: pdf_document
 ---
 Be sure to `set.seed(400)` at the beginning of your homework.
@@ -20,7 +20,7 @@ library(tidyverse)
     $$
     F(x) = 1 - \left(\frac{b}{x}\right)^a, \qquad x \ge b > 0, a > 0.
     $$
-    Derive the probability integral transformation $F^{-1}(U)$ and use the inverse tansform method to simulate a random sample of size $1000$ from the Pareto$(2, 2)$ disribution. Graph the density histogram of the sample with the Pareto$(2, 2)$ density super-imposed for comparison.
+    Derive the probability integral transformation $F^{-1}(U)$ and use the inverse transform method to simulate a random sample of size $1000$ from the Pareto$(2, 2)$ distribution. Graph the density histogram of the sample with the Pareto$(2, 2)$ density super-imposed for comparison.
     
     ```{r}
     # sample of size 1000 from pareto(2,2)
@@ -82,5 +82,3 @@ library(tidyverse)
     
     # compute mean proportion accepted and compare to expected proportion.
     ```
-    
-Turn in in a pdf of your homework to canvas. Your .Rmd file on rstudio.cloud will also be used in grading, so be sure they are identical and reproducible.

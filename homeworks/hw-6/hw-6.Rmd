@@ -1,7 +1,7 @@
 ---
 title: "STAT400 - Homework 6"
 author: "Your Name"
-date: "Due 10/15/2020 by 4pm"
+date: "Due 10/13/2022 by 4pm"
 output: pdf_document
 ---
 Be sure to `set.seed(400)` at the beginning of your homework.
