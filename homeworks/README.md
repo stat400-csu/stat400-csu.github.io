@@ -15,8 +15,8 @@ Complete all homework on the class server in the appropriate repo and turn in re
 1. [Homework 5](https://github.com/stat400-csu/hw-5/) - Due Oct. 6 
 1. [Homework 6](https://github.com/stat400-csu/hw-6/) - Due Oct. 13
 1. [Homework 7](https://github.com/stat400-csu/hw-7/) - Due Oct. 18
-<!--
 1. [Homework 8](https://github.com/stat400-csu/hw-8/) - Due Nov. 3
+<!--
 1. [Homework 9](https://github.com/stat400-csu/hw-9/) - Due Nov. 10
 1. [Homework 10](https://github.com/stat400-csu/hw-10/) - Due Nov. 17
 1. [Homework 11](https://github.com/stat400-csu/hw-11/) - Due Dec. 1
