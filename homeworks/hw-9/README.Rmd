@@ -24,10 +24,14 @@ Turn in in a pdf of your homework to canvas. Your .Rmd file on the server will a
 1. Open your hw-9 project on liberator.stat.colostate.edu
 2. Click the drop down on the project (top right side) > Share Project...
     
-    <img src="share_project.png" alt="plot of chunk unnamed-chunk-1" width="25%" />
+    ```{r, echo=FALSE, out.width="25%"}
+    knitr::include_graphics("share_project.png")
+    ```
   
 3. Click the drop down and add "stat400instructors" to your project.
 
-    <img src="share_dropdown.png" alt="plot of chunk unnamed-chunk-2" width="25%" />
+    ```{r, echo=FALSE, out.width="25%"}
+    knitr::include_graphics("share_dropdown.png")
+    ```
 
 This is how you **receive points** for reproducibility on your homework!
