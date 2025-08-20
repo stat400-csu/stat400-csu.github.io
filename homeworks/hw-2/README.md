@@ -19,15 +19,3 @@ Each of these data sets are included in this repo under the `data/` folder.
 
 Turn in in a pdf of your homework to canvas. Your .Rmd file on the server will also be used in grading, so be sure they are identical and reproducible.
 
-**Be sure to share your server project with the instructor and grader:**
-
-1. Open your hw-1 project on liberator.stat.colostate.edu
-2. Click the drop down on the project (top right side) > Share Project...
-    
-    <img src="share_project.png" title="plot of chunk unnamed-chunk-1" alt="plot of chunk unnamed-chunk-1" width="25%" />
-  
-3. Click the drop down and add "stat400instructors" to your project.
-
-    <img src="share_dropdown.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" width="25%" />
-
-This is how you **receive points** for reproducibility on your homework!

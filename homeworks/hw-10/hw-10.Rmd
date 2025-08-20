@@ -1,7 +1,6 @@
 ---
 title: "STAT400 - Homework 10"
 author: "Your Name"
-date: "Due 11/17/2022 by 4pm"
 output: pdf_document
 ---
 

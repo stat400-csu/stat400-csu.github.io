@@ -7,7 +7,7 @@ Homework 1 in STAT400: Computational Statistics @ CSU
 The diamonds data set is part of the `ggplot2` package. You can access it via the following code
 
 
-```r
+``` r
 # you might need to install the ggplot2 package first
 # install.packages("ggplot2")
 
@@ -34,13 +34,19 @@ Turn in in a pdf of your analysis to canvas. For this first assignment you can p
 
 **Be sure to share your server project with the instructor and grader:**
 
-1. Open your hw-1 project on liberator.stat.colostate.edu
+1. Open your "homeworks" project on liberator.stat.colostate.edu
 2. Click the drop down on the project (top right side) > Share Project...
     
-    <img src="share_project.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" width="25%" />
+    <div class="figure">
+    <img src="share_project.png" alt="plot of chunk unnamed-chunk-2" width="25%" />
+    <p class="caption">plot of chunk unnamed-chunk-2</p>
+    </div>
   
 3. Click the drop down and add "stat400instructors" to your project.
 
-    <img src="share_dropdown.png" title="plot of chunk unnamed-chunk-3" alt="plot of chunk unnamed-chunk-3" width="25%" />
+    <div class="figure">
+    <img src="share_dropdown.png" alt="plot of chunk unnamed-chunk-3" width="25%" />
+    <p class="caption">plot of chunk unnamed-chunk-3</p>
+    </div>
 
 This is how you **receive points** for reproducibility on your homework!

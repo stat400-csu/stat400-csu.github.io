@@ -40,19 +40,3 @@ Be sure to `set.seed(400)` at the beginning of your homework.
 
 Turn in in a pdf of your homework to canvas. Your .Rmd file on the server will also be used in grading, so be sure they are identical and reproducible.
 
-**Be sure to share your server project with the instructor and grader:**
-
-1. Open your hw-1 project on liberator.stat.colostate.edu
-2. Click the drop down on the project (top right side) > Share Project...
-    
-    ```{r, echo=FALSE, out.width="25%"}
-    knitr::include_graphics("share_project.png")
-    ```
-  
-3. Click the drop down and add "stat400instructors" to your project.
-
-    ```{r, echo=FALSE, out.width="25%"}
-    knitr::include_graphics("share_dropdown.png")
-    ```
-
-This is how you **receive points** for reproducibility on your homework!
