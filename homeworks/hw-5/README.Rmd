@@ -6,6 +6,11 @@ Homework 5 in STAT400: Computational Statistics @ CSU
 
 Be sure to `set.seed(400)` at the beginning of your homework.
 
+1. For the accept-reject example (Simulating notes Example 2.1, pg. 7-8) do the following:
+
+    a. Create a table comparing the $0.1, 0.2, \dots, 0.9$ quantiles (see `quantile`) for the algorithm when you generate $100$, $1000$, and $10,000$ samples. Compare your results to the theoretical quantiles from a Beta(4,3) distribution (see `qbeta`). What happens as the number of samples increases?
+    b. Add a counter to the original algorithm to determine the number of iterations that were needed to generate 1000 samples. Run your algorithm 10 times ("trials"). Make a table showing the number of iterations required for each trial and the mean number of iterations required for all 10 trials. Compute the proportion of accepted samples for each trial. Compare the mean proportion accepted to the expected proportion.
+
 1. The two-parameter Exponential density is
     $$
     f(x) = \lambda e^{-\lambda(x - \gamma)}, \qquad x \ge \gamma, \lambda > 0, \gamma \ge 0.
