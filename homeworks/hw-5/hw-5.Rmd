@@ -15,7 +15,32 @@ set.seed(400)
 library(tidyverse)
 ```
 
-1. The two-parameter Exponential density is
+1. For the accept-reject example (Simulating notes Example 2.1, pg. 7-8) do the following:
+
+    a. Create a table comparing the $0.1, 0.2, \dots, 0.9$ quantiles (see `quantile`) for the algorithm when you generate $100$, $1000$, and $10,000$ samples. Compare your results to the theoretical quantiles from a Beta(4,3) distribution (see `qbeta`). What happens as the number of samples increases?
+    b. Add a counter to the original algorithm to determine the number of iterations that were needed to generate 1000 samples. Run your algorithm 10 times ("trials"). Make a table showing the number of iterations required for each trial and the mean number of iterations required for all 10 trials. Compute the proportion of accepted samples for each trial. Compare the mean proportion accepted to the expected proportion.
+    
+    ```{r a}
+    # sample from Beta(3,4) using function from class
+    
+    # calculate quantiles using quantile
+    
+    # get theoretical quantiles using qbeta
+    
+    # compare
+    ```
+    
+    ```{r b}
+    # Alter the beta function from class to keep track of iterations
+    
+    # run algorithm 10 times and store number of iterations required
+    
+    # make table of # iterations for each triel and proportion accepted
+    
+    # compute mean proportion accepted and compare to expected proportion.
+    ```
+
+2. The two-parameter Exponential density is
     $$
     f(x) = \lambda e^{-\lambda(x - \gamma)}, \qquad x \ge \gamma, \lambda > 0, \gamma \ge 0.
     $$
@@ -44,7 +69,7 @@ library(tidyverse)
     
     ```
  
-2. Continue Problem 2 from Homework 4 (the Rayleigh distribution). Goal: you will use the code that you created last week for Problem 2. to learn more about sampling distributions. Here we are going to investigate the sampling distribution of the median of the Rayleigh distribution. 
+3. Continue Problem 2 from Homework 4 (the Rayleigh distribution). Goal: you will use the code that you created last week for Problem 2. to learn more about sampling distributions. Here we are going to investigate the sampling distribution of the median of the Rayleigh distribution. 
 
     a. Generate $n = 3$ samples from a Rayleigh(1) distribution and estimate the median of the sample. Now repeat this process to generate $m=100$ estimated medians.
     b. Repeat part a but using $n=100$ samples from a Rayleigh distribution.
@@ -73,7 +98,7 @@ library(tidyverse)
     
     ```
     
-3. Generate a random sample of size $1000$ from a normal location mixture. The components of the mixture have $N(0, 1)$ and $N(3, 1)$ distributions with mixing probabilities $p_1$ and $p_2 = 1 - p_1$. Graph the histogram of the sample with density superimposed for $p_1 = 0.1, \dots, 0.9$ and observe whether the mixture appears to be bimodal. Make a conjecture about the values of $p_1$ that produce bimodal mixtures.
+4. Generate a random sample of size $1000$ from a normal location mixture. The components of the mixture have $N(0, 1)$ and $N(3, 1)$ distributions with mixing probabilities $p_1$ and $p_2 = 1 - p_1$. Graph the histogram of the sample with density superimposed for $p_1 = 0.1, \dots, 0.9$ and observe whether the mixture appears to be bimodal. Make a conjecture about the values of $p_1$ that produce bimodal mixtures.
 
     ```{r}
     # function to generate from the normal mixture with different p values
@@ -84,7 +109,7 @@ library(tidyverse)
     
     ```
         
-4. A random variable $X$ has the Lognormal$(\mu, \sigma)$ distribution if $X = e^Y$, where $Y = N(\mu, \sigma^2)$. That is, $\log X \sim N(\mu, \sigma^2)$. Write a function to generate from a Lognormal$(\mu, \sigma)$ distribution using a transformation method and generate a sample of size $1000$ for $\mu = 1$, $\sigma = 0.25$. Compare the histogram with the lognormal density curve given by the `dlnorm` function in `R`.
+5. A random variable $X$ has the Lognormal$(\mu, \sigma)$ distribution if $X = e^Y$, where $Y = N(\mu, \sigma^2)$. That is, $\log X \sim N(\mu, \sigma^2)$. Write a function to generate from a Lognormal$(\mu, \sigma)$ distribution using a transformation method and generate a sample of size $1000$ for $\mu = 1$, $\sigma = 0.25$. Compare the histogram with the lognormal density curve given by the `dlnorm` function in `R`.
 
     ```{r}
     # function to generate from lognormal
@@ -94,3 +119,5 @@ library(tidyverse)
     # compare with dlnorm
     
     ```
+    
+
