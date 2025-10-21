@@ -1,6 +1,6 @@
 ---
 title: "STAT400: Midterm Review"
-author: "Fall 2022"
+author: "Fall 2025"
 output:
   pagedown::html_paged:
     # change to true for a self-contained document, but it'll be a litte slower for Pandoc to render
@@ -11,68 +11,53 @@ output:
 
 ## Sampling
 
-1. Are there specific characteristics we should look for in pdfs/cdfs that would help us choose which method to go about using? (Inverse transform, accept reject, ...) Can we maybe go through the most important concepts/rules that need to be met of each method.
+- I think it would also be helpful to review how to find an inverse CDF, since I'm still a bit unsure about that. 
 
-1. For all these different types of simulating, what do real-life examples look like? Sometimes, I am confused about where we are relative to our world and how it relates to what we are doing.
+- Could we also go over approaches for finding the $c$ constant for the envelope in the accept-reject method?
 
-1. Is it possible for us to go over getting the acceptance and rejects and how to envelop exceeds target? Also show us more examples of this?
+- Lastly, going over the accept-reject method and Monte Carlo sampling would be great!
 
-1. Can you define "g" again for acceptance-reject (is there a way to choose it)?
+- What are some ways to come up with an envelope when the uniform does not work?
 
-1. How do you know how to “pick” an envelope without looking at a graph—to ensure that it covers the entire support and the tails?
+- What are some good ways to prove that the envelope is valid?
 
-1. The algorithm for transformation method at 3.1 I was wondering how to compute the G = g(X1,…., XP) drawn from g(X1,..., Xp).
-
-1. For the method of the Transformation Methods(section 3), is it to "add on" something to the distribution of interest to "transform" it?
-
-1. Can you give an example of what a distributions of weighted sums would be like (compared to weighted sums of distributions)?
-
-1. Mixture distribution definition how to use the 2 sources of variability?
+- I am really confused about the method of using envelopes. I don’t really understand how to use them, nor why or when we would want to use them. 
 
 
+- I would like you to cover how to create the best 'envelope' for accept-reject method. And please provide an example, I noticed in our notes we don't really have a defined envelope in the examples provided; I just want to see the thinking process on how to create the envelope.
 
+- I would like to request that we go over envelope functions a bit more, and I am struggling a bit to understand specifically what they are and how they are found.
 
 \newpage
 
+\newpage
+
+
 ## Monte Carlo Integration
 
-1. I am a little confused about Chapter 6 page 9. Could you talk about how do you structure the linear transformation? Thanks!
+- Could we go over a specific example and/or a review of finding the Var(g(x)) using a Monte Carlo approach?
 
-1. For the review on Tuesday, the something I would like practice / clarification on are transformation methods
+- I was wondering if, when we are using methods 1 & 2 for Monte Carlo Integration, is the uniform distribution the only distribution we can use? In other words, if the uniform distribution isn’t a good option, is method 3 our go-to? If not, how would we use other distributions in that way?
 
-1. For Monte Carlo Integration for example 1.6 how to get about another approach when we want to use unif(0,1) instead of other method we were given?
+- In our review on Tuesday, would you elaborate more on why Monte Carlo integration is superior to approximating an integral via the sum of polygons? I know that we talked about how the estimate produced by Monte Carlo converges towards the true value of the integral as m increases, but I don’t quite understand why this is better than increasing the number of polygons, especially because Monte Carlo inherently involves randomness.
 
-1. How does Method 3 of the Monte Carlo integration example 1.7 (with the indicator function) work?
-
-1. Is there a process for the best way to go about choosing a phi distribution or density for importance sampling?
-What rules or results are we trying to meet with choosing a phi that is the "best"? Is there like an "ideal" or "best" phi that will have the lowest variance/most constant ratio, being technically the "right" phi to use?
-
-1. Going over "Your Turn Importance Sampling Example" since we ran out of time in class.
-
-1. My question for the review relates to importance sampling. In the class example, we biased the die by making 3 sides have value 1. However, this causes phi to not have positive probability everywhere f does, which violates one of the requirements stated later on. Is it okay to do this if the regions where f has positive probability and phi does not are not of interest to our estimation? Will we face this situation in the future or is it only a concern in our toy discrete example?
-
-1. I think the one thing I am most confused about is why monte carlo integration still works, even if sampling points does not follow a uniform distribution (for integrating on an interval from a to b). In the notes, it states that the only requirement is that the points are randomly drawn from a distribution with support over the range of integration. It seems like if the distribution we are drawing from is not uniform, then some parts of the curve would be under sampled, and other parts of the curve would be over sampled. I attached a picture to help explain
-
-    ![](midterm_review_question_mc.png)
-
-
-    In the picture, if we are integrating -x^2 + 4 (from 0 to 2), and the point of monte carlo is to get the ratio of: ( dots inside the curve / total dots) * area of distribution (in pink), it seems like this would be affected by the type of distribution we are taking our samples from.
-
-    Does this not matter because we are taking enough samples?
+\newpage
 
 \newpage
 
 ## Other Questions
 
-1. Does convergence almost surely include both convergence in probability and convergence in distribution? Or is there no overlap with those three?
 
+- Also, from Homework 3, we had to do integration by parts; could we go over a similar example during Tuesday’s review?
 
+- Going over marginal densities and trying a new example that isn't the drive-up and walk-up window one used from notes.
 
+- Could we review some examples using group_by, summarise, filter (etc.) like we did earlier in the semester? 
 
+- I was wondering if it would be possible to elaborate on what we can expect from the coding-based questions on the exam.
 
+\newpage
 
-
-
-
+\newpage
 
 
