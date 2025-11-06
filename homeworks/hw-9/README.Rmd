@@ -15,6 +15,17 @@ Be sure to `set.seed(400)` at the beginning of your homework.
     c. For $n = 5, 10, 30, 100, 500, 1000$, investigate the empirical type I error for a test of $H_0: \mu = 1$ vs. $H_a: \mu \not= 1$ when $X_1, \dots, X_n \sim Exponential(1)$ with $m = 2000$ Monte Carlo samples with nominal $\alpha = .05$.
     
     d. Compare your results in a.-c. in a table. What can you say about the departures from Normality as they relate to the Type I error rate of the $t$-test?
+    
+1. Suppose $X_1, \dots, X_{n}$ is a random sample from a $N(\mu, \sigma^2)$ distribution. Consider the test $H_0: \mu = 500$ vs. $H_a = \mu \not= 500$ with $\alpha = 0.05$. Then under the alternative hypothesis,
+    $$
+    T^* = \frac{\overline{X} - 500}{s/{\sqrt{n}}} \sim t_{n - 1}.
+    $$
+    for $\mu_a \not= 500$. We will examine the impact of effect size on power. Use $m = 1000$ for the number of Monte Carlo replications and $\sigma = 100$.
+    
+    a. Set $n = 20$. Plot the estimated power or $\mu_a$ ranging between $350$ to $650$.
+    b. Set $n = 100$ and repeat part a. Plot both power curves on the same plot. What happens to power as $n$ increases?
+    c. What is the estimated power when $\mu_a = 450$ for $n = 20$ and $n = 100$?
+    d. When $n = 20$, what effect size will you need to achieve power of approximately $0.80$?
 
 
 Turn in in a pdf of your homework to canvas. Your .Rmd file on the server will also be used in grading, so be sure they are identical and reproducible.
